@@ -1,6 +1,5 @@
 import './App.css'
-import * as React from 'react'
-import { useEffect, useRef } from 'react'
+// import * as React from 'react'
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 // import {useScript} from "./hooks/useScripts.js";
 
@@ -58,7 +57,7 @@ function Home() {
   // function useScript(url:string, isWeird:boolean, integrity:string, crossOrigin:string) {
   //   useEffect(() => {
   //     const script = document.createElement('script');
-  
+
   //     script.src = url;
   //     script.async = true;
   //     if(isWeird) {
@@ -67,7 +66,7 @@ function Home() {
   //       script.defer; 
   //     }
   //     document.body.appendChild(script);
-  
+
   //     return () => {
   //       document.body.removeChild(script);
   //     }
@@ -145,14 +144,14 @@ function About() {
 function Projects() {
   return (
     <div>
-      <Cards imageUrl={"/public/LinearPerceptron.png"}
+      <Cards imageUrl={"/LinearPerceptron.png"}
         imageAlt="linear perceptron" cardTitle="Linear Perceptron"
         cardDescription="A basic AI algorithm used for classifying different data points"
         tagStrArr={["AI", "Java", "Processing"]}
         githubUrl="FirstAI"
         isGame={false} />
 
-      <Cards imageUrl={"public/ProjectBoost.png"}
+      <Cards imageUrl={"/ProjectBoost.png"}
         imageAlt="rocket ship platform game" cardTitle="Project Boost"
         cardDescription="One of my first games I made alongside a Udemy tutorial"
         tagStrArr={["Gaming", "C#", "Unity"]}
@@ -160,28 +159,28 @@ function Projects() {
         isGame={true}
         itchUrl="project-boost" />
 
-      <Cards imageUrl={"public/WholesomeBot.png"}
+      <Cards imageUrl={"/WholesomeBot.png"}
         imageAlt="heart icon" cardTitle="Wholesome Bot"
         cardDescription="A Simple Discord Bot used for gifs and basic replying capabilities"
         tagStrArr={["Discord.js", "Javascript"]}
         githubUrl="The_Wholesome_Bot"
         isGame={false} />
 
-      <Cards imageUrl={"public/DnDBot.png"}
+      <Cards imageUrl={"/DnDBot.png"}
         imageAlt="20-sided dice" cardTitle="DnD Bot"
         cardDescription="A Simple Discord Bot that gives the output of a random die rolls for various types of die"
         tagStrArr={["Discord.js (version 12)", "Javascript"]}
         githubUrl="The_DND_Bot"
         isGame={false} />
 
-      <Cards imageUrl={"public/Wordle.png"}
+      <Cards imageUrl={"/Wordle.png"}
         imageAlt="3 by 4 Wordle Game with the first row filled with the word Hi" cardTitle="Wordle"
         cardDescription="We were told to remake Worlde for my coding class I took in college using the coding language Racket"
         tagStrArr={["School", "Racket"]}
         githubUrl="Wordle-Racket"
         isGame={false} />
 
-      <Cards imageUrl={"public/NeuralNetwork.png"}
+      <Cards imageUrl={"/NeuralNetwork.png"}
         imageAlt="Four rows with the top two rows showing numbers less than one but around 0.05 off while the bottom two show numbers greater than 0 but around 0.05 off"
         cardTitle="Neural Network"
         cardDescription="Following a tutorial series by the Code Train, I made this neural network that using supervised learning to get closer to either 0 or 1"
@@ -189,21 +188,21 @@ function Projects() {
         githubUrl="Neural-Network-1"
         isGame={false} />
 
-      <Cards imageUrl={"public/ArchGraph.png"}
+      <Cards imageUrl={"/ArchGraph.png"}
         imageAlt="A graph of branching nodes"
         cardTitle="Arch Database"
         cardDescription="Following a tutorial series by Yoav Rubin, I made a stack-like database that allowed for getting, deleting, updating and adding elements"
         tagStrArr={["Clojure", "Database"]}
         githubUrl="ArchBase"
         isGame={false} />
-      <Cards imageUrl={"public/SeamCarver.png"}
+      <Cards imageUrl={"/SeamCarver.png"}
         imageAlt="A picture of balloons with a red line going across the image"
         cardTitle="Seam Carver"
         cardDescription="Using convolutions and Minimum Spannning Trees, the program can crop lines horizontally and vertically that will effect the image the least"
         tagStrArr={["School", "Java (11)"]}
         githubUrl="SeamCarver"
         isGame={false} />
-      <Cards imageUrl={"public/MazeFill.png"}
+      <Cards imageUrl={"/MazeFill.png"}
         imageAlt="A maze with a path filled with a blue path from the top-left corner to the bottom-right corner 
         with some of the paths leading off from the blue path colored red."
         cardTitle="Maze Path"
