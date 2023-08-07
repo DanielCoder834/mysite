@@ -131,6 +131,11 @@ a:hover {
     display: flex;
   }
 
+  .nameTitle {
+    font-size: 25rem;
+    -webkit-text-stroke-width: 1.5px;
+  }
+
 }
 
 /* Homepage */
@@ -312,5 +317,5 @@ button:hover {
 }
 
 .connectWrapper {
-  display: flex; 
+  display: flex;
 }

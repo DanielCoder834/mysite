@@ -1,7 +1,7 @@
 import './App.css'
 // import * as React from 'react'
-import React, { useState } from 'react'
-import { Routes, Route, Outlet, Link, NavLink } from "react-router-dom";
+import { useState } from 'react'
+import { Routes, Route, Outlet, NavLink } from "react-router-dom";
 // import {useScript} from "./hooks/useScripts.js";
 
 
