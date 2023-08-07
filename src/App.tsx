@@ -1,7 +1,9 @@
 import './App.css'
 // import * as React from 'react'
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import React, { useState } from 'react'
+import { Routes, Route, Outlet, Link, NavLink } from "react-router-dom";
 // import {useScript} from "./hooks/useScripts.js";
+
 
 const spaceBetweenBarAndTitle = <div className="space1"></div>
 
@@ -30,22 +32,29 @@ export default function App() {
 
 
 function Layout() {
-  return <div>
-    <header>
-      <div className="navbar">
-        <div className="logo">
-          <header>
-            <ul className="links">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/projects">Projects</Link></li>
-              <li><Link to="/work">Work</Link></li>
-              <li><Link to="/connect">Connect</Link></li>
-            </ul>
-          </header>
 
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const navListClasses = `links navbar-links ${menuOpen ? "open" : ""}`;
+
+  return <div>
+    <header className="nav-wrapper">
+      <nav className="navbar">
+        <div className="menu" onClick={() => {
+          setMenuOpen(!menuOpen);
+        }}>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </div>
+        <ul className={navListClasses}>
+          <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to="/about">About</NavLink></li>
+          <li><NavLink to="/projects">Projects</NavLink></li>
+          <li><NavLink to="/work">Work</NavLink></li>
+          <li><NavLink to="/connect">Connect</NavLink></li>
+        </ul>
+      </nav>
     </header>
     <Outlet />
   </div>;
@@ -232,7 +241,7 @@ function Work() {
 
 function Connect() {
   return (
-    <div>
+    <div className='connectWrapper'>
       <h2 className='connect'>Message me on Linkedin if you want to chat :)</h2>
       {/* <Link to="/">Go to the home page</Link> */}
 
@@ -284,3 +293,4 @@ function CardTags(props: any) {
     <span className="tag">{props.tagName}</span>
   )
 }
+
