@@ -6,7 +6,7 @@
 }
 
 * {
-  /* background-color: #97FEED; */
+  background-color: #97feed;
 }
 
 #root {
@@ -30,7 +30,6 @@
 /* Navbar */
 
 li {
-  list-style-type: none;
   list-style: none;
 }
 
@@ -41,7 +40,7 @@ li {
 }
 
 a:hover {
-  color: #0B666A;
+  color: #0b666a;
 }
 
 /* header {
@@ -75,9 +74,8 @@ a:hover {
   display: flex;
   justify-content: center;
   gap: 6rem;
-  margin-left: 12rem;
+  margin-left: 25rem;
 }
-
 
 /* Toggle-Shenanigans */
 
@@ -100,6 +98,8 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+  /* Navbar */
+
   .navbar .menu {
     display: flex;
     align-items: center;
@@ -136,6 +136,10 @@ a:hover {
     -webkit-text-stroke-width: 1.5px;
   }
 
+  /* About Pages */
+  .aboutCard {
+    flex-direction: column;
+  }
 }
 
 /* Homepage */
@@ -158,7 +162,7 @@ a:hover {
   margin-top: -2em;
   display: flex;
   justify-content: start;
-  color: #0B666A;
+  color: #0b666a;
   font-family: Spartan;
 }
 
@@ -170,17 +174,106 @@ a:hover {
   font-size: 3rem;
 }
 
-
 /* About */
+
+.space2 {
+  margin-top: 4rem;
+}
 
 .about {
   font-family: Spartan;
-  color: #0B666A;
+  color: #0b666a;
   display: flex;
 }
 
-/* Card */
+/* About Card */
 
+.aboutCard {
+  /* max-width: 300px; */
+
+  /* Center the container in middle on horizontal axis */
+  /* margin: 0 auto; */
+
+  /* Add empty space above the container (20% of the view height) */
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  max-width: 95%;
+}
+
+.a_card:hover {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 30px 0px #071952;
+  -moz-box-shadow: 0px 0px 30px 0px #071952;
+  box-shadow: 0px 0px 30px 0px #071952;
+}
+
+.a_card {
+  /* Change background color */
+  background-color: #97feed;
+
+  /* margin-left: 5rem;  */
+  /* margin-right: 10rem;  */
+
+  /* Add border */
+  border: 1px solid #bacdd8;
+
+  /* Add space between the border and the content */
+  padding: 8px;
+  border-radius: 12px;
+  /* display: inline-flexbox; */
+  max-width: 100%;
+}
+
+.a_card__details {
+  /* Add space around the details */
+  padding: 16px 8px 8px 8px;
+  /* grid-template-rows: 1fr min-content; */
+  background-color: #97feed;
+}
+
+.a_tag {
+  padding: 4px 8px;
+  border: 1px solid #e5eaed;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #788697;
+  margin: 0.2rem;
+  /* margin-left: 0.5rem; */
+}
+
+.a_allTags {
+  background-color: #97feed;
+  max-width: 20rem;
+  display: flex;
+  /* flex-direction: column; */
+  /* max-width: 2rem; */
+  /* width: 10rem; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Style div elements that have class equal to name */
+.a_name {
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #97feed;
+  margin-top: 16px;
+}
+
+/* Style p element */
+.a_card__details p {
+  font-size: 14px;
+  color: #071952;
+  line-height: 150%;
+  background-color: #97feed;
+}
+
+/* Card */
 
 img {
   width: auto;
@@ -190,7 +283,6 @@ img {
 }
 
 #container {
-
   display: flex;
   justify-content: center;
 
@@ -218,6 +310,15 @@ img {
   width: auto;
 }
 
+.card:hover {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 30px 0px #071952;
+  -moz-box-shadow: 0px 0px 30px 0px #071952;
+  box-shadow: 0px 0px 30px 0px #071952;
+}
+
 img[alt="rocket ship platform game"] {
   height: 15rem;
 }
@@ -237,7 +338,6 @@ img[alt="rocket ship platform game"] {
   color: #071952;
   text-decoration: none;
 }
-
 
 /* Style div elements that have class equal to tag */
 .tag {
@@ -304,7 +404,7 @@ button:hover {
 
 .work {
   font-family: Spartan;
-  color: #0B666A;
+  color: #0b666a;
   font-weight: 100;
 }
 
@@ -312,7 +412,7 @@ button:hover {
 
 .connect {
   font-family: Spartan;
-  color: #0B666A;
+  color: #0b666a;
   font-weight: 100;
 }
 
