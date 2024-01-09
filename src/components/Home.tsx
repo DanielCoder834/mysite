@@ -11,15 +11,14 @@ export default function Home() {
   );
 
   let catStyles = {
-    width: "20em",
-    height: "20em",
-    display: "flex",
-    flexDirection: "start",
-    marginTop: "-3em",
+    width: "300px",
+    height: "300px",
+    marginTop: "-50px",
+    alignItems: "center",
   };
 
   return (
-    <div>
+    <div className="homePage">
       {spaceBetweenBarAndTitle}
       <div className="containerCatAndTitle">
         {titleName}

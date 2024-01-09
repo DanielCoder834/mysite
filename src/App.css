@@ -74,7 +74,7 @@ a:hover {
   display: flex;
   justify-content: center;
   gap: 6rem;
-  margin-left: 25rem;
+  margin-left: 30%;
 }
 
 /* Toggle-Shenanigans */
@@ -99,7 +99,6 @@ a:hover {
 
 @media (max-width: 600px) {
   /* Navbar */
-
   .navbar .menu {
     display: flex;
     align-items: center;
@@ -132,6 +131,26 @@ a:hover {
   }
 }
 
+@media (max-width: 1000px) {
+  .navbar-links {
+    /* display: flex; */
+    margin-left: 20%;
+  }
+  .nav-wrapper {
+    display: flex;
+    justify-content: start;
+  }
+  .containerCatAndTitle {
+    margin-left: 0%;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar-links {
+    /* display: flex; */
+    margin-left: 10%;
+  }
+}
 /* Work */
 /* 
 .work {
