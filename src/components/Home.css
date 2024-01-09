@@ -1,0 +1,62 @@
+@font-face {
+  font-family: Spartan;
+  src: url("SpartanMB-ExtraBold.otf") format("opentype");
+}
+
+/* Homepage */
+
+.space1 {
+  height: 6em;
+}
+
+.containerCatAndTitle {
+  display: flex;
+  justify-content: start;
+}
+
+.nameTitle {
+  display: flex;
+  /* justify-content: start; */
+  color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #071952;
+  font-size: 100px;
+  font-family: Spartan;
+}
+
+.description {
+  margin-top: -2em;
+  display: flex;
+  justify-content: start;
+  color: #0b666a;
+  font-family: Spartan;
+}
+
+.icons {
+  margin-top: 2rem;
+  display: flex;
+  justify-self: start;
+  gap: 1rem;
+  font-size: 3rem;
+}
+
+.fa-envelope {
+  color: #071952;
+}
+.fa-linkedin {
+  color: #071952;
+}
+.fa-github {
+  color: #071952;
+}
+
+@media (max-width: 600px) {
+  .nameTitle {
+    /* font-size: 25rem; */
+    -webkit-text-stroke-width: 1.5px;
+  }
+  .containerCatAndTitle dotlottie-player {
+    width: 300px;
+    height: 300px;
+  }
+}
