@@ -13,8 +13,9 @@ export default function Home() {
   let catStyles = {
     width: "300px",
     height: "300px",
-    marginTop: "-50px",
+    marginTop: "-20px",
     alignItems: "center",
+    color: "#071952",
   };
 
   return (
@@ -24,13 +25,13 @@ export default function Home() {
         {titleName}
         <dotlottie-player
           className="cat"
-          src="https://lottie.host/6119b7bc-2817-49e8-a0ea-927f605ee701/YeJ7iA9mzH.lottie"
+          src="https://lottie.host/55f9f6fe-fab8-42f2-a9b7-e1c2cb466c71/A0eCweoGzb.json"
           background="transparent"
           speed="1"
           style={catStyles}
           direction="1"
           mode="normal"
-          loop
+          // loop
           autoplay
         />
       </div>
