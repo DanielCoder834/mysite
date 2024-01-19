@@ -1,5 +1,5 @@
 import { CardTags } from "./Cards";
-import "./About.css";
+import "./style_components/About.css";
 
 export default function About() {
   return (

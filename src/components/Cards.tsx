@@ -1,4 +1,4 @@
-import "./Cards.css";
+import "./style_components/Cards.css";
 
 function Cards(props: any) {
   const tagStrArr = Array.from(props.tagStrArr);

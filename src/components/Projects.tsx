@@ -1,5 +1,5 @@
-import "./Cards.css";
-import "./Projects.css";
+import "./style_components/Cards.css";
+import "./style_components/Projects.css";
 import { Cards } from "./Cards";
 
 export default function Projects() {
@@ -111,6 +111,66 @@ export default function Projects() {
     true,
   ];
 
+  let reversiArr: any = [
+    "Reversi",
+    "A hexagonal checker game shown face up. Two players are playing one with white pieces and one is playing with black pieces. Currently in the middle of the game.",
+    "Reversi",
+    "A checker-like board game with an option for multiplayer and bot versus player",
+    ["School", "Java", "AI"],
+    "Reversi",
+    false,
+    "",
+    true,
+  ]
+
+  let raftArr: any = [
+    "raft",
+    "Shows a circle with the word client pointing to a circle with the word leader with that circle pointing to other circles labeled followers.",
+    "Raft Algorithmn",
+    "Implemented the raft algorithmn that handles election periods, partitions, packet drops and other features within the algorithmn",
+    ["School", "Python", "Networking", "Database"],
+    "raft-starter-code-main",
+    false,
+    "",
+    true,
+  ]
+
+  let stonkArr: any = [
+    "stonk",
+    "Shows a candle graph meant to represent stocks",
+    "Stock Data Website",
+    "Using a python apis in combination with the Golang Redis database with a React website, I am making a website to display up-to-date stock prices and other information. To connect each piece of the program I use sockets to send information.",
+    ["In Progress", "Python", "React", "Networking", "Golang", "Redis", "Database"],
+    "stonks",
+    false,
+    "",
+    false,
+  ]
+
+  let browserEngineArr: any = [
+    "browserLoad",
+    "Shows an icon of a browser with the words loading in the middle",
+    "Browser Engine",
+    "Following a tutorial I was able to create a mini browser engine using Rust. The engine includes its own rendering, html parser,css parser, and box styling.",
+    ["In Progress", "Rust", "Browser Development"],
+    "Browser_engine",
+    false,
+    "",
+    false,
+  ]
+
+  let greenNotesArr: any = [
+    "typingComputer",
+    "Shows a person typing into a Google Doc file",
+    "Green Notes",
+    "A simple note taking website writtten in React that uses ad revenue to donate to tree planting organizations",
+    ["In Progress", "React"],
+    "Green_Notes",
+    false,
+    "",
+    false,
+  ]
+
   let cardArr: any = [
     linearArr,
     boostArr,
@@ -121,6 +181,11 @@ export default function Projects() {
     archArr,
     seamArr,
     mazeArr,
+    reversiArr,
+    raftArr,
+    stonkArr,
+    browserEngineArr,
+    greenNotesArr,
   ];
 
   return (

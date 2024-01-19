@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./style_components/Home.css";
 import "@dotlottie/player-component";
 
 export default function Home() {
